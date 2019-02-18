@@ -21,5 +21,7 @@ from apps.app1 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app1/', include('apps.app1.urls')),
-    path('blog/', include('blog.urls'))
+    path('blog/', include('blog.urls')),
+    path('time/', include('apps.showTime.urls')),
+    path('rand/', include('apps.rand.urls')),
 ]
